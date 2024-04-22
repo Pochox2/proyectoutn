@@ -30,6 +30,7 @@ body {
     margin-right: 40px;
     font-size: 20px;
     align-items: center;
+    
 }
 
 .nav_item{
@@ -49,6 +50,8 @@ body {
 .nav_a {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+
 }
 
 .nav_item:hover {
