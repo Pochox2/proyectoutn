@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a { text-decoration: none;}
+a:visited {
+    color: black;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+    background-image: url("/img/fondo1.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-right: 40px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.nav_item{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    margin: 6px;
+    background-color: rgba(52, 180, 197, 0.808);
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: ease-in-out 2s;
+    height: 50px;
+    
+}
+
+.nav_a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item:hover {
+    background-color: azure;
+}
+
+.dis {
+    opacity: 60%;
+    background-color: aliceblue;
+}
+
+.logo {
+    width: 140px;
+}
+
+.historia {
+    background-color: rgba(31, 30, 30, 0.788);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    color:aliceblue
+}
+
+.hist_tt {
+    font-size: 50px;
+    padding: 40px;
+}
+
+.hist_p {
+    font-size: 24px;
+}
+
+.hist_div{
+    margin: 15px;
+}
+
+.card {
+    display: flex;
+    width: 355px;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(31, 30, 30, 0.788);
+    color:aliceblue;
+    font-size: 20px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card_desc {
+ margin: 3px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ 
+}
+
+.card_list {
+    margin: 20px;
+   justify-content: center;
+    display: flex;
+
+}
+
+.tt {
+    margin-top: 80px;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 20px;
+    background-color: rgba(31, 30, 30, 0.788);
+    padding: 10px;
+}
+
+@media screen and (max-width:1450px) {
+    .hist_p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .hist_tt {
+        font-size: 32px;
+        
+    }
+
+    .card_list {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card {
+        width: 270px;
+    }
+
+    .card_img {
+        width: 250px;
+        height: 233px;
+    }
+
+    .footer {
+        height: 80px;
+        background-color: black;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .historia {
+        margin: 30px;
+        height: 650px;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width:880px) {
+    .card_list {
+        flex-direction: column;
+    }
+
+    .tt {
+        font-size: 25px;
+    }
+
+    .nav_list{
+        margin-right: 0px;
+    }
+
+    .nav_item {
+        font-size: 18px;
+        margin: 3px;
+        padding: 14px;
+    }
+
+    .hist_tt {
+        font-size: 28px;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 645px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+    .tt {
+        font-size: 20px;
+    }
+
+    .historia {
+        height: 870px;
+    }
+
+    .nav_item {
+        font-size: 15px;
+        padding: 10px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+
+    .nav_list {
+        flex-direction: column;
+    }
+
+    .avion {
+        width: 300px;
+        height: 200px;
+    }
+
+    .hist_tt {
+        padding: 3px;
+        font-size: 20px;
+    }
+
+    .hist_p {
+        font-size: 17px;
+    }
+    
+}
+
+@media screen and (max-width:330px) {
+
+    .avion {
+        width: 200px;
+        height: 150px;
+    }
+
+    .hist_p {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .card_img {
+        width: 240px;
+    }
+    
+}
